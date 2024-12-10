@@ -1,0 +1,78 @@
+
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  
+  align-items: center;
+
+  
+  
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+.container {
+  background-color: #ffffff;
+  position: float;
+  text-align: left;
+  /* top: 10px;
+  right: 10px; */
+  border-radius: 10px;
+  padding: 20px;
+  border: 3px solid #e0871a;
+  box-shadow: 0 0 25px 0 black;
+  max-width: 400px;
+  
+}
+.app-container {
+  
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #e0871a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  
+}
+
+.welcome-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* 'float' is not a valid value for 'position' */
+}
+
+.welcome-container h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+}
+
+.welcome-container p {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+}
+
+.welcome-container button {
+  margin-top: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 200px; /* Adjust the height as needed */
+  margin-bottom: 20px; /* Adjust spacing below the logo */
+}
+
+.logo-container img {
+  max-width: 100%; /* Ensures it resizes within the container */
+  height: auto; /* Maintains aspect ratio */
+}

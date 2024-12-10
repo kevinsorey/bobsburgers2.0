@@ -38,6 +38,48 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deployment Using ngrok
+Follow the steps below to deploy the application using ngrok:
+
+Set Up ngrok
+Go to https://dashboard.ngrok.com/get-started/setup.
+
+Download ngrok
+Download a standalone executable with zero runtime dependencies based on your architecture:
+
+Download for macOS — Apple Silicon
+Download for macOS — Intel
+Install ngrok
+In a terminal, extract the ngrok executable by running:
+
+bash
+Copy code
+sudo unzip ~/Downloads/ngrok-v3-stable-darwin-arm64.zip -d /usr/local/bin
+Add Authtoken
+Run the following command to add your authtoken to the default ngrok.yml configuration file:
+
+bash
+Copy code
+ngrok config add-authtoken 2q0kU0B7n7MMeiWXAtrvSDIfCRE_J8XBjFsNvdcPnotTuBS5
+Start the React Application
+Ensure your React application is running locally. Use the following command:
+
+bash
+Copy code
+npm start
+By default, React runs on http://localhost:3000.
+
+Expose Your Application
+In a terminal, run ngrok to expose your local app to the web:
+
+bash
+Copy code
+ngrok http http://localhost:3000
+ngrok will generate a public URL, such as:
+https://3cab-72-84-69-192.ngrok-free.app/
+
+Access the Application
+Use the generated public URL to access your application from anywhere via HTTPS.
 
 ## Learn More
 
@@ -68,5 +110,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# bobsburgers
-# bobsburgers
+
